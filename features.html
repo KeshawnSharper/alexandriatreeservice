@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<body>
+    <div id="navbar">
+        <div class="navbar-mobile">
+          <i class="fa fa-bars fa-3x mobile-icon"  style="color: white;"></i>
+          <i class="close-icon fa fa-close fa-3x"  style="color: white;display: none;"></i>
+          <button class="navbar-button">CLICK TO CALL FOR FREE QUOTE</button>
+          <ul class="mobile-list-showing">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about-us-section"><li>About</li></a>
+            <a href="#services"><li>Services</li></a>
+            <a href="#reviews-div"><li>Reviews</li></a>
+            <a href="#footer"><li>Contact</li></a>
+            </ul>
+          </div> 
+          <div class="navbar-cpu">
+          <button class="navbar-button">CALL 267-242-5887 FOR FREE QUOTE</button>
+          <ul class="cpu-list-showing">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about-us-section"><li>About</li></a>
+            <a href="#services"><li>Services</li></a>
+            <a href="#reviews-div"><li>Reviews</li></a>
+            <a href="#footer"><li>Contact</li></a>
+            </ul>
+        </div>
+        </div>
+        <div id="about-us-section">
+            <main>
+              <h2>Services</h2>
+                <img src="home.jpg" height="175" width="175"></img>
+                
+            </main>
+            <div class="grid-parent">
+              <div>
+                  <div class="image-container">
+                    <img src="parallax.jpg" alt="Notebook">
+                    <div class="image-content">
+                      <h1>Heading</h1>
+                      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                    </div>
+                  </div>
+                  <br> </br>
+                  <div class="image-container">
+                    <img src="parallax.jpg" alt="Notebook">
+                    <div class="image-content">
+                      <h1>Heading</h1>
+                      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                    </div>
+                  </div>
+                  <br> </br>
+                  <div class="image-container">
+                    <img src="parallax.jpg" alt="Notebook">
+                    <div class="image-content">
+                      <h1>Heading</h1>
+                      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                    </div>
+                  </div>
+                  <br> </br>
+                  <div class="image-container">
+                    <img src="parallax.jpg" alt="Notebook">
+                    <div class="image-content">
+                      <h1>Heading</h1>
+                      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                    </div>
+                  </div>
+                  <br> </br>
+                </div>
+                <aside class="sidebar form">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="fname">First Name </label>
+                        </div>
+                        <div class="col-75">
+                          <input required type="text" id="sender_first_name" name="firstname" placeholder="Your First Name..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Last Name </label>
+                        </div>
+                        <div class="col-75">
+                          <input required type="text" id="sender_last_name" name="lastname" placeholder="Your Last Name..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Phone Number  </label>
+                        </div>
+                        <div class="col-75">
+                          <input required type="number" id="sender_phone_number" name="lastname" placeholder="Your Phone Number...">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Email </label>
+                        </div>
+                        <div class="col-75">
+                          <input required type="email" id="sender_email" name="lastname" placeholder="Your Email Address...">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="subject">Message</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea id="message" name="subject" placeholder="Message" style="height:200px"></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <button onclick="sendMail();" >Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </aside>
+            </div>
+        </div>
+        <div id="parralax">
+        </div>
+          <div id="footer">
+            <footer>
+                <h2>Contact Us</h2>
+                <br></br>
+                <main class="grid-parent-2">
+                    
+                <section>
+                    <p>Mon - Fri: 8am - 8pm</p>
+                    <br></br>
+                    <p>awskeshawn@gmail.com</p>
+                    <br></br>
+                    <p>267-242-5887</p>
+                </section>
+                
+                    <aside class="sidebar">
+                        <form class="form-inline" action="/action_page.php">
+                            <input type="email" id="email" placeholder="Enter Email" name="email">
+                            <input type="password" id="pwd" placeholder="Enter Your Name" name="pswd">
+                            <input type="password" id="pwd" placeholder="Enter Phone Number" name="pswd">
+                            <textarea  placeholder="Enter a message" name="pswd"></textarea>
+                            <button type="submit">Submit</button>
+                          </form>
+                    </aside>
+                
+                  </main>
+            </footer>
+        </div>
+    </body>
+</head>
+</html>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
